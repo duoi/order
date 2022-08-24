@@ -1,3 +1,7 @@
+# NB
+
+You can use this Postman collection https://www.getpostman.com/collections/ea9110a3d29bd3afa71b which, when imported into Postman, should already have the relevant endpoints configured. Just replace the token.
+
 # Setup
 
 1. Clone repo
@@ -8,6 +12,8 @@
    2. You can add a custom user with `docker exec -it order_web_1 python3 manage.py add_dummy_data <name>`
    3. You can add `n` number of additional products by adding your `n` at the end, i.e:  `docker exec -it order_web_1 python3 manage.py add_dummy_data 2500`
 
+![image](https://user-images.githubusercontent.com/10301400/186498491-24bd6914-5e51-4b46-b227-fd5ae64783c7.png)
+
 All of the users created here have full superuser privileges for ease of testing - you can log into Django admin etc.
 
 # Authentication
@@ -16,6 +22,8 @@ All of the users created here have full superuser privileges for ease of testing
 2. This should give you back something to the effect of `Token dfg897s....d8923h` as a response.
 3. Add this as an `Authorization` header with the token as the value (including the word `Token` and the space)
    1. It should look something like `Authorization: Token dfg897s....d8923h`
+
+![image](https://user-images.githubusercontent.com/10301400/186498618-32b92fd0-ac63-440f-af2d-ea7448f4a8b7.png)
 
 # API
 
